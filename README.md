@@ -1,1 +1,1 @@
-# softwareProject2
+This repo is made for softwareProject2 homework
