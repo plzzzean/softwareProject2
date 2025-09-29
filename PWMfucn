@@ -1,4 +1,4 @@
-// === 도전과제 2: PWM 함수 직접 구현 ===
+// 도전과제 2: PWM 함수 직접 구현
 #define PIN_LED 7
 
 static int period_us    = 1000; // 1ms 기본
