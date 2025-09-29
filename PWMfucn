@@ -1,8 +1,8 @@
 // 도전과제 2: PWM 함수 직접 구현
 #define PIN_LED 7
 
-static int period_us    = 1000; // 1ms 기본
-static int duty_percent = 0;   // 50% 기본
+static int period_us    = 1000; 
+static int duty_percent = 0;   
 
 void set_period(int period) {
   period_us = period;
@@ -28,9 +28,8 @@ void pwm_output_once() {
 
 void run_triangle_once_1s() {
   
-  const unsigned long TARGET_TOTAL_US = 1000000UL; /
-  const int STEPS = 200; // 밝기 단계 총 200개
-
+  const unsigned long TARGET_TOTAL_US = 1000000UL; 
+  const int STEPS = 200; 
   long cycles_per_step = (long)((TARGET_TOTAL_US + (STEPS*period_us)/2) / (STEPS * (long)period_us));
   if (cycles_per_step < 1) cycles_per_step = 1; 
 
